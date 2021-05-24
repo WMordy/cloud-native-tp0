@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+.App{
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Auth component */
+.auth{
+ height: 100vh;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display:grid;
+  grid-template-rows: max-content;
+}
+.auth-item{
+  padding-bottom: 10%;
+}
+#welcome-header{
+  color: rgb(59, 128, 255);
+}
+input {
+  font-size: larger;
+  border-radius: 12px;
+  border: none; /* <-- This thing here */
+  border:solid 1px rgb(59, 128, 255);
+  padding: 8px;
+}
+input:focus{
+  border: none;
+  border-radius: 12px;
+}
+#login{
+  background-color: rgb(59, 128, 255);
+  font-size: x-large;
+  border: none;
+  border-radius: 12px;
+  padding : 12px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#signup{
+  color: rgb(59, 128, 255);
+  font-size: x-large;
+  border: none;
+  border-radius: 12px;
+  padding : 12px;
+  background-color: white;
+  border: solid 1px rgb(59, 128, 255);
+}
+.buttons{
+  padding-right: 24px;
+  
+}
+button{
+  margin-left: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Home component */
+
+.home-holder{
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  display: grid;
+}
+.players-table{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.table-item{
+  padding: 24px;
+}
+img{
+  width: 25vh;
+  height: 30vh;
+  border-radius: 16px 0px 16px 0px;
+  box-shadow: 3px 4px 21px -8px rgba(0,0,0,0.75);
+}
+.player-name{
+  color: rgb(59, 128, 255);
+  font-size: x-large;
 }
